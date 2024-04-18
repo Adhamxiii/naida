@@ -24,7 +24,7 @@ const Links = [
 
 const NavBar = () => {
   return (
-    <header className="flex justify-between px-[100px] py-9 items-center h-[116px]">
+    <header className="flex justify-between px-[100px] py-9 items-center h-[116px] max-md:px-[20px]">
       <Image src="/logo.png" alt="logo" width={52} height={44} />
       <nav className="flex gap-10">
         <ul className="flex gap-10">

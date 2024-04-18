@@ -3,8 +3,8 @@ import NFTCard from "./NFTCard";
 
 const HeroOrbit = () => {
   return (
-    <div className="relative w-fit h-fit flex justify-center items-center mt-40 ">
-      <div className="w-[464px] h-[464px] rounded-full border border-white border-opacity-20 absolute">
+    <div className="relative w-fit h-fit flex justify-center items-center mt-40">
+      <div className="w-[464px] h-[464px] rounded-full border border-white border-opacity-20 absolute ">
         <NFTCard
           title="Balistic Wave Collection #1"
           pos="top-left"
