@@ -2,32 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-greyScale-900;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.bg-hero {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    @apply bg-primary-300 bg-opacity-50;
+    position: absolute;
+    width: 328px;
+    height: 328px;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
   }
+
+  &::before {
+    top: 0;
+    left: -100px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: -100px;
+  }
+}
+
+.card {
+  @apply w-[200px] h-[250px] rounded-3xl;
 }
