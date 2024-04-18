@@ -67,7 +67,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Live Demo
 
-Check out the live demo of the project [here](https://nft-landing-page.vercel.app/).
+Check out the live demo of the project [here](https://nft-landing-page-pearl.vercel.app/).
 
 ## Contact Me
 
